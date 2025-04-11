@@ -1,0 +1,115 @@
+/* Sidebar Styling */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 11em; /* Adjust the width to your preference */
+    height: 100vh;
+    background-color: #fcca4a;
+    overflow: hidden;
+    z-index: 1000;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    font-family: 'Arial', sans-serif; /* Use Arial or your preferred system font */
+    outline: none;
+    box-shadow: none;
+  }
+  
+  /* Logo Styling */
+  .logo-container {
+    width: 70px;  /* Adjust size of the logo container */
+    height: 70px; /* Ensure it remains square */
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden; /* Ensure logo stays within the circle */
+    margin-bottom: 20px; /* Space below the logo */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the logo inside */
+  }
+  
+  .sidebar-logo {
+    width: 100%;  /* Ensure logo stretches within the container */
+    height: 100%; /* Ensure logo fills the container */
+    object-fit: cover; /* Ensures the image covers the space inside the circle */
+  }
+  
+  /* Sidebar Title */
+  h3 {
+    color: #7c2727;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  /* List Styling */
+  ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;  /* Make links take full width of sidebar */
+  }
+  
+  li {
+    margin: 10px 0; /* Space out each link */
+    text-align: center;  /* Center the text */
+  }
+  
+
+  /* Remove lines between list items */
+ul li {
+  border: none; /* Removes any borders */
+  margin-bottom: 0; /* Optional: removes spacing between list items */
+}
+
+/* Optional: Styling for NavLink to make it look cleaner */
+ul li a {
+  text-decoration: none; /* Removes underline from links */
+}
+  .nav-link {
+    color: #4b4b4b;  /* Set a neutral color for the links */
+    font-weight: 600;
+    padding: 8px 12px;
+    text-decoration: none;  /* Remove underline from links */
+    display: block;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none; /* Remove any border */
+  }
+  
+  .nav-link:hover {
+    background-color: #f3e3b6;  /* Add a hover effect with a background */
+    color: white;  /* Change the link color on hover */
+  }
+  
+  .active {
+    background-color: #eba58ed3;
+    /*light active link with background */
+    color: white;
+  }
+  
+  /* Active Link Styling */
+  .nav-link.active {
+    font-weight: bold;
+    background-color: #9a3b3b; /* Slightly darker shade for active link */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      padding-top: 10px; /* Reduce padding for small screens */
+    }
+    h3 {
+      font-size: 1.5rem;  /* Adjust heading size for smaller screens */
+    }
+    .sidebar-logo {
+      width: 50px;
+      height: 50px; /* Make logo slightly smaller on mobile */
+    }
+  }
+  

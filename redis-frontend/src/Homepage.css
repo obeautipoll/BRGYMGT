@@ -1,0 +1,98 @@
+/* Homepage styling */
+.homepage {
+    text-align: center;
+    padding: 50px;
+    background-color: #fffff0; /* Light cream */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   /* Background Image */
+   background-image: url("/public/coverpage.jpg"); 
+   background-size: cover; /* Cover the entire page */
+   background-position: center; /* Center the image */
+   background-repeat: no-repeat;
+ }
+ 
+ /* Add an overlay effect (optional, for better readability) */
+ .homepage::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+   z-index: -1; /* Send it behind the content */
+ }
+ 
+  
+  /* Title */
+  .homepage h1 {
+    color: #7c2727; /* Deep Maroon */
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    
+    /* Text Border (Outline Effect) */
+    text-shadow: 
+        -2px -2px 0 #fffff0,  
+         2px -2px 0 #f8bc41,  
+        -2px  2px 0 #fffff0,  
+         2px  2px 0 #fffff0; /* Light Cream Outline */
+}
+.homepage p {
+  color: #fffff0; /* Light Cream */
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-style: italic; /* Italicized text */
+  text-align: center;
+
+  /* 1px Dark Yellow Outline */
+  text-shadow: 
+      -1px -1px 0 #eec773,  
+       2px -2px 0 #81161d,  
+      -1px  1px 0 #d9a536,  
+       1px  1px 0 #d9a536; /* Dark Yellow */
+}
+
+  
+  /* Buttons */
+  .homepage-btn {
+    width: 200px;
+    padding: 12px;
+    margin: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* Login Button */
+  .homepage-btn.login {
+    background-color: #f8bc41; /* Golden Yellow */
+    color: #161414;
+    border: 2px solid #ffffff; /* White Border */ /* Near Black */
+  }
+  .homepage-btn.login:hover {
+    background-color: #d9a536; /* Slightly darker yellow */
+    transform: scale(1.08);
+  }
+  
+  /* Register Button */
+  .homepage-btn.register {
+    background-color: #7c2727; /* Deep maroon */
+    color: white;
+    border: 2px solid #ffffff; /* White Border */
+  }
+  
+  .homepage-btn.register:hover {
+    background-color: #641d1d; /* Slightly darker maroon */
+    transform: scale(1.08);
+  }

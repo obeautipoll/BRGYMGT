@@ -1,0 +1,141 @@
+/* MSU-IIT Themed Styles for ResidentBarChart */
+
+h4{
+  text-align: center;
+  color: #7c2727;
+  margin-bottom: 10px;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  background-color: #f0f7cd; /* Background color for each page */
+}
+
+.recharts-wrapper {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  width: 70%; /* Adjusted width */
+}
+
+.chart-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.pie-chart-container {
+  width:40%;/* Small pie chart on one side */
+  background-color: rgb(254, 216, 79);
+  padding: 15px;
+  border-radius: 70px;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.total-residents {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #7c2727;
+  margin-top: 10px;
+  padding: 10px;
+  background: linear-gradient(to right, #fffff0, #f8bc41);
+  border-radius: 8px;
+}
+
+.recharts-cartesian-axis-tick text {
+  fill: #161414; /* Dark text for readability */
+  font-weight: bold;
+}
+.recharts-legend-item text {
+  fill: #7c2727; /* Dark maroon for better visibility */
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.recharts-tooltip-wrapper {
+  background-color: #fffff0;
+  border: 1px solid #f8bc41;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.recharts-legend-item text {
+  fill: #7c2727;
+  font-weight: bold;
+}
+
+.recharts-bar-rectangle {
+  stroke: #7c2727;
+}
+
+.recharts-bar {
+  fill: #f8bc41 !important; /* Golden yellow bars */
+  transition: fill 0.3s ease-in-out;
+}
+
+.recharts-bar:hover {
+  fill: #7c2727 !important; /* Deep Maroon on Hover */
+}
+
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px; /* Increased font size */
+  font-weight: bold;
+  color: #541f1f;
+  margin-bottom: 8px;
+}
+
+.legend-color {
+  width: 12px; /* Bigger color indicator */
+  height: 10px;
+  border-radius: 70%;
+  margin-right: 12px;
+  border: 1px solid #7c2727; /* Ensures visibility */
+}
+
+@media (max-width: 768px) {
+  .recharts-wrapper {
+      padding: 15px;
+      background-color: #fffff0; /* Light Cream Background */
+      border: 2px solid #f8bc41; /* Golden Yellow Border */
+      border-radius: 8px;
+      width: 90%; /* Make it responsive */
+  }
+
+  .chart-row {
+      flex-direction: column;
+  }
+
+  .pie-chart-container {
+      width:100%;
+  }
+
+  .recharts-cartesian-axis-tick text {
+      fill: #7c2727; /* Deep Maroon Text */
+  }
+
+  .recharts-tooltip-wrapper {
+      background-color: #f8bc41; /* Golden Yellow Tooltip */
+      color: #161414; /* Dark Text */
+      border: 1px solid #7c2727; /* Maroon Border */
+  }
+
+  .recharts-bar {
+      fill: #7c2727 !important; /* Deep Maroon Bars */
+  }
+
+  .recharts-bar:hover {
+      fill: #f8bc41 !important; /* Golden Yellow on Hover */
+  }
+}

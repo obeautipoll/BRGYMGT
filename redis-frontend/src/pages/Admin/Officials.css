@@ -1,0 +1,148 @@
+:root {
+    --official-card-padding: 1.5rem;
+    --official-card-bg-color: #f9f9f9;
+    --official-card-border-radius: 8px;
+    --official-card-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    --official-button-bg-color: #7c2727;
+    --official-button-hover-color: #f8bc41;
+    --official-title-color: #7c2727;
+    --official-content-color: #444;
+  }
+  
+  .officials-container {
+    padding: 2rem;
+  }
+  
+  .official-form {
+    margin-bottom: 20px;
+  }
+  
+  .official-form input,
+  .official-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 10px 0;
+    border-radius: var(--official-card-border-radius);
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: var(--official-button-bg-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    background-color: var(--official-button-hover-color);
+  }
+  
+  .officials-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .official-card {
+    background-color: var(--official-card-bg-color);
+    padding: var(--official-card-padding);
+    border-radius: var(--official-card-border-radius);
+    box-shadow: var(--official-card-shadow);
+  }
+  
+  .official-thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .official-details {
+    padding-top: 10px;
+  }
+  
+  .official-details h3 {
+    font-size: 1.2rem;
+    color: var(--official-title-color);
+  }
+  
+  .official-details p {
+    font-size: 1rem;
+    color: var(--official-content-color);
+  }
+  
+  .official-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .official-actions button {
+    padding: 0.5rem 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .officials-container {
+      padding: 3rem;
+    }
+  
+    .official-card {
+      padding: calc(var(--official-card-padding) * 1.5);
+    }
+  }
+  .delete-btn {
+    padding: 10px 20px; /* Adjust the padding as needed */
+    font-size: 16px; /* Adjust font size */
+    background-color: #f33333; /* Red background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 1px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    resize: both; /* Allow resizing of the button */
+    overflow: hidden; /* Prevent content from overflowing */
+  }
+  .delete-btn {
+    max-width: 100px; /* Maximum width of the button */
+    min-width: 90px; /* Minimum width of the button */
+  }
+  img {
+    width: 100px; /* Set the width to 100px */
+    height: 100px; /* Set the height to 100px */
+    object-fit: cover; /* Ensure the aspect ratio is maintained */
+  }
+
+  /* Table Column Widths */
+#idColumn {
+  width: 8%; /* Adjust the ID column width */
+}
+
+#nameColumn {
+  width: 15%; /* Adjust the Name column width */
+}
+
+#ageColumn {
+  width: 5%; /* Adjust the Age column width */
+}
+
+#positionColumn {
+  width: 10%; /* Adjust the Position column width */
+}
+
+#descriptionColumn {
+  width: 30%; /* Adjust the Description column width */
+}
+
+#contactColumn {
+  width: 15%; /* Adjust the Contact No column width */
+}
+
+#imageColumn {
+  width: 10%; /* Adjust the Image column width */
+}
+
+#actionsColumn {
+  width: 15%; /* Adjust the Actions column width */
+}

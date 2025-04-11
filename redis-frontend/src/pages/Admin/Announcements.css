@@ -1,0 +1,122 @@
+/* Centering the entire content */
+.announcements-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  width: 100%;
+  max-width: 1000px; /* You can adjust the max-width as needed */
+  margin: 0 auto; /* This ensures the container is centered horizontally */
+}
+
+/* Individual announcement item styling */
+.announcement-item {
+  background-color: #f7dfdf;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  max-width: 500px; /* Ensures it doesn't stretch too wide */
+}
+
+.announcement-header {
+  margin-bottom: 8px;
+}
+
+.announcement-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e8be05bf;
+  margin: 0;
+  text-align: left; /* Ensures the title aligns left */
+}
+
+.announcement-description {
+  font-size: 14px;
+  color: #400e0e;
+  margin: 10px 0;
+  text-align: left; /* Ensures the description aligns left */
+}
+
+.announcement-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 8px 15px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #28a745;
+}
+
+.edit-btn:hover {
+  background-color: #218838;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* "MORE" button */
+.more-btn {
+  background-color: #d9534f;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.more-btn:hover {
+  background-color: #c9302c;
+}
+
+/* Announcement form */
+.announcement-form {
+  margin-bottom: 20px;
+  background-color: #fcc455;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.announcement-form h3 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+/* Centering form inputs */
+input,
+textarea {
+  width: 97%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+

@@ -1,0 +1,670 @@
+/* Style for the input and buttons */
+
+
+.upload-csv-btn {
+  background-color: rgb(251, 190, 35); /* Green background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding around the text */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Allow other elements to be aligned next to it */
+  font-size: 16px; /* Set font size */
+  margin: 15px 0; /* Add some margin around the button */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease;
+}
+
+.upload-csv-btn:hover {
+  background-color: #45a049; /* Darker green when hovered */
+}
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px; /* Adjusted gap for better spacing */
+  max-width: 250px;
+  margin: 1px;
+  float: right;
+}
+
+.upload-container input[type="file"] {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  color: #333;
+  width: 80%;
+}
+/* CSV Button Styles */
+.csv-btn {
+  padding: 8px 16px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  float: right;
+}
+.export-btn {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 8px 15px; /* Padding around the text */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Allow other elements to be aligned next to it */
+  font-size: 16px; /* Set font size */
+  margin: 5px 0; /* Add some margin around the button */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease;
+  width: 10%; /* Ensure the button spans the full width */
+  box-sizing: border-box;
+  float: left; /* Include padding in the element's total width */
+  gap: 110px;
+}
+
+.export-btn:hover {
+  background-color: #ec645d; /* Darker green on hover */
+}
+
+.upload-container button {
+  background-color: #007bff; /* Blue background for the upload button */
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box; /* Include padding in the total width */
+  margin-top: 5px;
+}
+
+.upload-container button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+.csv-btn:hover {
+  background-color: #1cff20;
+}
+/* MSU-IIT Themed Styles */
+body {
+  background-color: #e8f5c4;
+  color: #161414;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #7c2727;
+}
+
+button {
+  background-color: #f8bc41;
+  color: #161414;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #e6a832;
+}
+
+.add-resident-btn {
+  background-color: #7c2727;
+  color: #fffff0;
+  text-align: left;
+}
+
+.add-resident-btn:hover {
+  background-color: #c38686;
+}
+
+td button {
+  display: inline-block;
+  width: 80px; /* Limit the width of the buttons */
+  text-align: center;
+}
+.edit-btn {
+  background-color: #f8bc41;
+  color: #161414;
+}
+
+.edit-btn:hover {
+  background-color: #e9e96a;
+}
+
+.delete-btn {
+  background-color: #7e0a0a;
+  color: #fffff0;
+}
+
+.delete-btn:hover {
+  background-color: #5e0a0a;
+}
+
+.logout-btn {
+  background-color: #7e0a0a;
+  color: #fffff0;
+  float: right;
+}
+
+.logout-btn:hover {
+  background-color: #5e0a0a;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #161414;
+  border-radius: 4px;
+}
+
+/* Table Styling */
+table {
+  width: 100%; /* Ensures the table occupies the full width of the container */
+  max-width: 1500px; /* Optional: limit the maximum width to avoid the table becoming too wide */
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  table-layout: fixed;
+}
+
+th, td {
+  padding: 40px; /* Increase padding for a more spacious table */
+  text-align: left;
+  word-wrap: break-word;
+}
+td, th {
+  width: 8%; /* Adjust the width of each column */
+}
+th {
+  background-color: #7c2727;
+  color: #fffff0;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f8f0;
+}
+
+tr:hover {
+  background-color: #f2e3c6;
+}
+/*columns
+
+/* Table Column Widths */
+#idColumn {
+  width: 8%; /* Adjust the ID column width */
+}
+
+#surnameColumn {
+  width: 15%; /* Adjust the Surname column width */
+}
+
+#firstNameColumn {
+  width: 10%; /* Adjust the First Name column width */
+}
+
+#MiddleNameColumn {
+  width: 10%; /* Adjust the Last Name column width */
+}
+
+#genderColumn {
+  width: 11%; /* Adjust the Gender column width */
+}
+
+#birthdateColumn {
+  width: 13%; /* Adjust the Birthdate column width */
+}
+
+#birthplaceColumn {
+  width: 15%; /* Adjust the Birthplace column width */
+}
+
+#purokColumn {
+  width: 9%; /* Adjust the Purok column width */
+}
+
+#maritalStatusColumn {
+  width: 12%; /* Adjust the Marital Status column width */
+}
+
+#totalHouseholdMembersColumn {
+  width: 15%; /* Adjust the Total Household Members column width */
+}
+
+#bloodTypeColumn {
+  width: 10%; /* Adjust the Blood Type column width */
+}
+
+#occupationColumn {
+  width: 16%; /* Adjust the Occupation column width */
+}
+
+#lengthOfStayColumn {
+  width: 12%; /* Adjust the Length of Stay (Months) column width */
+}
+
+#monthlyIncomeColumn {
+  width: 12%; /* Adjust the Monthly Income column width */
+}
+
+#actionsColumn {
+  width: 15%; /* Adjust the Actions column width */
+}
+
+
+input[type="text"] {
+  width: 100%;              /* Make the search box take up the full width of the container */
+  max-width: 400px;         /* Limit the width to a max of 400px */
+  padding: 8px 12px;        /* Add some padding for better spacing */
+  margin: 10px 0;           /* Add margin to space it out from other elements */
+  border: 1px solid #ccc;   /* Add a light border */
+  border-radius: 4px;       /* Slightly rounded corners */
+  font-size: 1rem;          /* Increase the font size for readability */
+  outline: none;            /* Remove the default outline when focused */
+  box-sizing: border-box;   /* Include padding and border in the element's total width/height */
+}
+
+input[type="text"]:focus {
+  border-color: #7c2727;    /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(124, 39, 39, 0.4); /* Add a subtle shadow on focus */
+}
+
+/* Optional: Style the placeholder text */
+input[type="text"]::placeholder {
+  color: #888;              /* Lighter color for placeholder text */
+  font-style: italic;       /* Italic style for the placeholder */
+}
+
+/* Modal Styling */
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fffff0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px; /* Make font smaller for mobile */
+    width: 100%; /* Ensure it takes full available space on smaller screens */
+  }
+
+  th, td {
+    padding: 8px; /* Adjust padding for mobile */
+  }
+}
+/* Modal Styling */
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fffff0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* MSU-IIT Themed Styles */
+
+body {
+    background-color: #fffff0;
+    color: #161414;
+    font-family: 'Arial', sans-serif;
+}
+
+h2 {
+    color: #7c2727;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add-resident-btn {
+    background-color: #f8bc41;
+    color: #161414;
+    margin-bottom: 15px;
+}
+
+.edit-btn {
+    background-color: #e6e167;
+    color: #161414;
+    margin-right: 3px;
+}
+
+.delete-btn {
+    background-color: #7e0a0a;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #161414;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+  text-align: center; /* Center the content in the table cells */
+  vertical-align: middle; /* Vertically align content */
+}
+
+
+
+th {
+    background-color: #7c2727;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f8bc41;
+}
+
+tr:nth-child(odd) {
+    background-color: #fffff0;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid #f8bc41;
+    border-radius: 5px;
+    background-color: white;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #7c2727;
+    border-radius: 3px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+    
+    button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+.resident-list-title {
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #7c2727;
+  padding: 10px;
+  background: linear-gradient(to right, #fffff0, #f8bc41);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resident-table {
+
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  margin: 0 auto; /* Centers the table */
+}
+/* SIDEEBARRR
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 11em;
+  height: 100vh;
+  background-color: #fcca4a;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+/* Sidebar Header */
+.sidebar header {
+  background-color: #09f;
+  width: 100%;
+  padding: 0.75em 1em;
+  color: white;
+  font-size: 1.2em;
+}
+
+/* Sidebar Navigation */
+.sidebar-nav {
+  position: fixed;
+  background-color: #e6a832;
+  height: 100%;
+  font-size: 1.2em;
+  padding-bottom: 6em;
+  overflow: auto;
+  z-index: 9;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  width: 100%;
+}
+
+.sidebar-nav a {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.75em;
+  padding: 1.05em 1em;
+  display: block;
+  transition: all 0.6s ease;
+}
+
+.sidebar-nav a:hover {
+  background-color: #e6a832;
+}
+
+/* Sidebar Icons */
+.sidebar-nav i {
+  font-size: 1.8em;
+  padding-right: 0.5em;
+  display: inline;
+  vertical-align: middle;
+}
+
+/* Adjust main content to not overlap with sidebar */
+.content {
+  margin-left: 11em;
+  padding: 20px;
+  transition: margin-left 0.3s ease-in-out;
+}
+.content {
+  margin-left: 12;
+}
+
+/* Style for Show/Hide Password Button */
+.show-password-btn {
+  background-color: #f8bc41;
+  color: #161414;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.show-password-btn:hover {
+  background-color: #7c2727;
+  color: #fff;
+}
+
+.show-password-btn:focus {
+  outline: none;
+}
+
+/* Adjust width for Username column */
+.username-column {
+  width:25; /* Adjust width of the Username column */
+  text-align: left; /* Align text to the left */
+}
+
+/* Adjust width for Actions column */
+.actions-column {
+  width:25; /* Adjust width of the Actions column */
+  text-align: center; /* Center the buttons */
+}
+
+/* Style for the buttons in the Actions column */
+.actions-column button {
+  padding: 8px 16px; /* Adjust button padding */
+  font-size: 14px; /* Set button font size */
+  margin: 5px; /* Add margin between buttons */
+  border: none; /* Remove border */
+  cursor: pointer; /* Add pointer cursor */
+  border-radius: 5px; /* Round the button corners */
+}
+
+/* Styling for the approve button */
+.actions-column button:nth-child(1) {
+  background-color: #4CAF50; /* Green for approve */
+  color: white;
+  padding: 10px 10px;
+}
+
+/* Styling for the reject button */
+.actions-column button:nth-child(2) {
+  background-color: #f44336; /* Red for reject */
+  color: white;
+}
+
+/* Hover effect on buttons */
+.actions-column button:hover {
+  opacity: 0.8;
+}
+/* Button Styles */
+.assign-action-btn1, .delete-action-btn1 {
+  padding: 10px 5px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Assign Button */
+.assign-action-btn {
+  background-color: #4CAF50;  /* Green for 'Assign' button */
+  color: white;
+}
+
+.assign-action-btn:hover {
+  background-color: #45a049;
+    /* Darker green on hover */
+}
+
+/* Delete Button */
+.delete-action-btn {
+  background-color: #f44336;  /* Red for 'Delete' button */
+  color: white;
+}
+
+.delete-action-btn:hover {
+  background-color: #e53935;  /* Darker red on hover */
+}
+
+/* Table Header Styles */
+.username-header, .actions-header {
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 16px;
+  background-color: #f4f4f4;
+  border-bottom: 2px solid #ddd;
+}
+
+.username-header1 {
+  width: 50%;
+}
+
+.actions-header1 {
+  width: 20%;
+}
+
+.assign-action-btn1 {
+  /* Default button styles */
+  background-color: rgb(78, 56, 6); /* Default color */
+  color: white;
+}
+
+.assign-action-btn1.assigned {
+  background-color: green; /* Change to green when assigned */
+  color: white;
+}

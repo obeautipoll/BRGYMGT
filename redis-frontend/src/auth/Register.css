@@ -1,0 +1,152 @@
+/* Modal Background */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000; /* Ensure it's on top */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  width: 350px; /* Adjust size */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  color: #800000; /* MSU-IIT Maroon */
+  cursor: pointer;
+  z-index: 10; /* Make sure the button is on top */
+}
+
+.close:hover {
+  color: #d4af37; /* MSU-IIT Gold on hover */
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+input {
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #d4af37; /* MSU-IIT Gold */
+  background-color: #f9f9f9;
+}
+
+input:focus {
+  border-color: #800000; /* MSU-IIT Maroon when focused */
+  background-color: #fff;
+  outline: none;
+}
+
+/* Submit Button */
+button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #800000; /* MSU-IIT Maroon */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d4af37; /* MSU-IIT Gold on hover */
+}
+
+/* Button style for Cancel/Close actions */
+button.cancel {
+  background-color: #d4af37;
+  color: #800000;
+}
+
+button.cancel:hover {
+  background-color: #800000;
+  color: white;
+}
+
+/* General Page Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f3f3; /* Light gray background */
+  color: #333;
+}
+
+h2 {
+  font-size: 24px;
+  color: #800000; /* MSU-IIT Maroon */
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #800000;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #d4af37; /* MSU-IIT Gold */
+}
+
+table th {
+  background-color: #800000; /* MSU-IIT Maroon */
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Button style for table actions */
+button.action-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #d4af37; /* MSU-IIT Gold */
+  color: #800000; /* MSU-IIT Maroon */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.action-btn:hover {
+  background-color: #800000; /* MSU-IIT Maroon */
+  color: white;
+}

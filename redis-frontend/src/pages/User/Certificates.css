@@ -1,0 +1,138 @@
+.submit-btn {
+    padding: 10px 1px;  /* Adjust padding to resize */
+    font-size: 16px;     /* Adjust font size */
+    width: 200px;        /* Adjust width if needed */
+    background-color: #5ae45e; /* Green background */
+    color: white;        /* White text */
+    border: none;        /* Remove borders */
+    border-radius: 5px;  /* Rounded corners */
+    cursor: pointer;     /* Add a pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+  
+}
+  
+  .submit-btn:hover {
+    background-color: #2e8031; /* Darker green on hover */
+  }
+  .form-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+  .certificates-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .certificates-table th,
+  .certificates-table td {
+    border: 1px solid #f76c6c;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .certificates-table th {
+    background-color: #ceac48;
+    font-weight: bold;
+  }
+  
+  .certificates-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .certificates-table tr:hover {
+    background-color: #eec885;
+  }
+  
+  .cancel-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .cancel-btn:disabled {
+    background-color: #7c2727;
+    cursor: not-allowed;
+  }
+  .certificates-container {
+    padding: 20px;
+  }
+  
+  .view-prices-btn {
+    position: absolute;
+    top: 70px;
+    left: 420px;
+    margin: 0; /* Remove margin as we're using absolute positioning */
+    padding: 7px;
+    background-color: #efab4b;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .view-prices-btn:hover {
+    background-color: #fdc682;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+  }
+  
+  .close-btn {
+    padding: 10px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    background-color: #ff4500;
+  }
+  
+  .certificates-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .certificates-table th, .certificates-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .certificates-table th {
+    background-color: #a79052;
+  }
+  
+  .cancel-btn {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #e0818a;
+  }
+  
